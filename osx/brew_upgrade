@@ -1,0 +1,5 @@
+date >> /Users/wbchou/tmp/brew.log
+/usr/local/bin/brew update >> /dev/null
+/usr/local/bin/brew upgrade >> /Users/wbchou/tmp/brew.log
+/usr/local/bin/brew cleanup >> /Users/wbchou/tmp/brew.log
+echo >> /Users/wbchou/tmp/brew.log

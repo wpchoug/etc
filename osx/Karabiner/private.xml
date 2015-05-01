@@ -1,0 +1,247 @@
+<?xml version="1.0"?>
+<!-- ~/Library/Application\ Support/Karabiner/private.xml -->
+<root>
+  <appdef>
+    <appname>VIRTUALBOX</appname>
+    <equal>org.virtualbox.app.VirtualBoxVM</equal>
+  </appdef>
+
+  <!-- Apple Keyboard Start -->
+  <!-- Hyper -->
+  <item>
+    <name>Control_L to Hyper(cmd+ctl+opt)</name>
+    <identifier>private.control_l2hyper</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::CONTROL_L,
+      KeyCode::COMMAND_L, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+
+  <!-- Apple Keyboard End -->
+
+  <!-- Non-Apple Keyboard Start -->
+  <!-- Hyper -->
+  <item>
+    <name>Command_L to Hyper(cmd+ctl+opt), except VirtualBox</name>
+    <identifier>private.commandL2hyper</identifier>
+    <not>VIRTUALBOX</not>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::COMMAND_L,
+      KeyCode::COMMAND_L, ModifierFlag::OPTION_L | ModifierFlag::CONTROL_L,
+      KeyCode::S
+    </autogen>
+  </item>
+
+  <item>
+    <name>PC Application to Hyper(cmd+ctl+opt)</name>
+    <identifier>private.application2hyper</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::PC_APPLICATION,
+      KeyCode::COMMAND_R, ModifierFlag::OPTION_R | ModifierFlag::CONTROL_R
+    </autogen>
+  </item>
+
+  <!-- Alt to cmd -->
+  <item>
+    <name>Alt_L to Cmd_L and ctl+space, except VirtualBox</name>
+    <identifier>private.altL2commandL_controlSpace</identifier>
+    <not>VIRTUALBOX</not>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::OPTION_L,
+      KeyCode::COMMAND_L,
+      KeyCode::SPACE, ModifierFlag::CONTROL_L
+    </autogen>
+  </item>
+  <item>
+    <name>Alt_R to Cmd_R and cmd+opt+space, except VirtualBox</name>
+    <identifier>private.altR2commandR_commandOptionSpace</identifier>
+    <not>VIRTUALBOX</not>
+    <autogen>
+      __KeyOverlaidModifier__
+      KeyCode::OPTION_R,
+      KeyCode::COMMAND_R,
+      KeyCode::SPACE, ModifierFlag::COMMAND_R | ModifierFlag::OPTION_R
+    </autogen>
+  </item>
+
+  <!-- cmd to alt -->
+  <item>
+    <name>Cmd_L to Alt_L, except VirtualBox</name>
+    <identifier>private.cmdL2altL</identifier>
+    <not>VIRTUALBOX</not>
+    <autogen>
+      __KeyToKey__
+      KeyCode::COMMAND_L,
+      KeyCode::OPTION_L
+    </autogen>
+  </item>
+
+  <!-- Non-Apple Keyboard End -->
+
+  <!-- For hurted left Fingers Start -->
+  <item>
+    <name>6 to q</name>
+    <identifier>private.n62q</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_6,
+      KeyCode::X
+    </autogen>
+  </item>
+  <item>
+    <name>7 to u</name>
+    <identifier>private.n72u</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_7,
+      KeyCode::F
+    </autogen>
+  </item>
+  <item>
+    <name>8 to e</name>
+    <identifier>private.n82e</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_8,
+      KeyCode::D
+    </autogen>
+  </item>
+  <item>
+    <name>9 to o</name>
+    <identifier>private.n92o</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_9,
+      KeyCode::S
+    </autogen>
+  </item>
+  <item>
+    <name>0 to a</name>
+    <identifier>private.n92a</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_0,
+      KeyCode::A
+    </autogen>
+  </item>
+  <item>
+    <name>q to 6</name>
+    <identifier>private.q2n6</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::X,
+      KeyCode::KEY_6
+    </autogen>
+  </item>
+  <item>
+    <name>a to 7</name>
+    <identifier>private.a2n7</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::KEY_7
+    </autogen>
+  </item>
+  <item>
+    <name>o to 8</name>
+    <identifier>private.o2n8</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::KEY_8
+    </autogen>
+  </item>
+  <item>
+    <name>e to 9</name>
+    <identifier>private.e2n9</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::KEY_9
+    </autogen>
+  </item>
+  <item>
+    <name>u to 0</name>
+    <identifier>private.u2n0</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::KEY_0
+    </autogen>
+  </item>
+
+
+
+  <item>
+    <name>6 to i</name>
+    <identifier>private.n62i</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::KEY_6,
+      KeyCode::G
+    </autogen>
+  </item>
+  <item>
+    <name>a to 6</name>
+    <identifier>private. a2n6</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::A,
+      KeyCode::KEY_6
+    </autogen>
+  </item>
+  <item>
+    <name>o to 7</name>
+    <identifier>private.o2n7</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::S,
+      KeyCode::KEY_7
+    </autogen>
+  </item>
+  <item>
+    <name>e to 8</name>
+    <identifier>private.e2n8</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::D,
+      KeyCode::KEY_8
+    </autogen>
+  </item>
+  <item>
+    <name>u to 9</name>
+    <identifier>private.u2n9</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::F,
+      KeyCode::KEY_9
+    </autogen>
+  </item>
+  <item>
+    <name>i to 0</name>
+    <identifier>private.i2n0</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::G,
+      KeyCode::KEY_0
+    </autogen>
+  </item>
+
+  <item>
+    <name>comma to 0</name>
+    <identifier>private.comma2n0</identifier>
+    <autogen>
+      __KeyToKey__
+      KeyCode::W,
+      KeyCode::KEY_0
+    </autogen>
+  </item>
+
+
+   <!-- For hurted left Fingers End -->
+
+</root>

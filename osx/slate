@@ -1,0 +1,22 @@
+config keyboardLayout dvorak
+
+alias mod1 ctrl;cmd;alt
+alias mod2 ctrl;alt;cmd;shift
+
+alias sox screenOriginX
+alias soy screenOriginY
+alias ssx screenSizeX
+alias ssy screenSizeY
+
+alias center move ${sox}+297;${soy} 1325;${ssy}
+alias standard move ${sox}+297;${soy}+25 1325;940
+alias front move ${sox}+${ssx}/3;${soy}+${ssy}*0.15 ${ssx}/3;${ssy}*0.84
+alias left move ${sox};${soy} ${ssx}*2/3;${ssy}
+alias right move ${sox}+${ssx}*2/3;${soy} ${ssx}/3;${ssy}
+alias aside move ${sox}+${ssx}*2/3;${soy}+${ssy}*0.15 ${ssx}/3;${ssy}*0.84
+
+bind c:${mod1} ${center}
+bind -:${mod1} ${front}
+bind l:${mod1} ${left}
+bind =:${mod1} ${right}
+bind /:${mod1} ${aside}
